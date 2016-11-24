@@ -1,4 +1,6 @@
 library(httr)
+install.packages(Rfacebook)
+library(Rfacebook)
 
 token = ""
 url = sprintf("https://graph.facebook.com/v2.3/me?access_token=%s",token)

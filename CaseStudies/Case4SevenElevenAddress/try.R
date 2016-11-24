@@ -14,7 +14,8 @@ library(XML)
 ####################################################
 # connector
 res = POST("http://emap.pcsc.com.tw/EMapSDK.aspx",
-           body=list(commandid="SearchStore",city="å°åŒ—å¸‚",town="å¤§å®‰å€"))
+           body=list(commandid="SearchStore",city="¥x¥_¥«",town="¤j¦w°Ï"))
+doc = content(res,as="text")
 
 # parser
 node = xmlParse(content(res,as="text"))
